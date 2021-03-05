@@ -1,9 +1,5 @@
-/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-/* global style */
-
-/* define custom css variables */
 :root{
   --bg-black-900: #000000;
   --bg-black-100: #dddddd;
@@ -18,7 +14,7 @@
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
 }
-/* override custom css variables for dark theme */
+
 body.dark{
   --bg-black-900: #ffffff;
   --bg-black-100: #353535;
