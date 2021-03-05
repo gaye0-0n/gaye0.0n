@@ -1,11 +1,9 @@
-/* toggle style switcher */
 const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
 
 styleSwitcherToggler.addEventListener("click", () =>{
   document.querySelector(".style-switcher").classList.toggle("open");
 })
 
-// hide style - switcher on scroll
 window.addEventListener("scroll", () =>{
   if(document.querySelector(".style-switcher").classList.contains("open")){
     document.querySelector(".style-switcher").classList.remove("open");
@@ -31,7 +29,6 @@ function changeColor(){
   })
 }
 
-// checking if 'color' key exists
 if(localStorage.getItem("color") !== null){
   changeColor();
 }
@@ -51,7 +48,6 @@ dayNight.addEventListener("click", () =>{
 })
 
 function themeMode(){
-  // checking if 'theme' key exists
   if(localStorage.getItem("theme") !== null){
     if(localStorage.getItem("theme") === "light"){
       document.body.classList.remove("dark");
